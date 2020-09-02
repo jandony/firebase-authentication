@@ -104,22 +104,25 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hi, Firebase Authentication</h1>
-      <p id="loginMessage">You are logged in!</p>
+      <div id="ImageSection"></div>
+      <div id="FormSection">
+        <div className="container">
+          <h1>Hi, Firebase Authentication</h1>
+          <p id="loginMessage">You are logged in!</p>
 
-      <div className="container">
-        <input id="txtEmail" type="email" placeholder="Email" />
-        <input id="txtPassword" type="password" placeholder="Password" />
+          <input id="txtEmail" type="email" placeholder="Email" />
+          <input id="txtPassword" type="password" placeholder="Password" />
 
-        <button id="btnLogin" className="btn" onClick={onLogin}>
-          Log In
-        </button>
-        <button id="btnSignUp" className="btn" onClick={onSignUp}>
-          Sign Up
-        </button>
-        <button id="btnLogout" className="btn" onClick={onLogout}>
-          Log Out
-        </button>
+          <button id="btnLogin" className="btn" onClick={onLogin}>
+            Log In
+          </button>
+          <button id="btnSignUp" className="btn" onClick={onSignUp}>
+            Sign Up
+          </button>
+          <button id="btnLogout" className="btn" onClick={onLogout}>
+            Log Out
+          </button>
+        </div>
       </div>
     </div>
   );
