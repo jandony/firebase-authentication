@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-logo {
@@ -35,4 +38,27 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.container {
+  width: 400px;
+}
+
+#txtEmail,
+#txtPassword {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.btn {
+  padding: 0.5rem;
+  margin: 0.25rem;
+  min-width: 100px;
+}
+
+#btnLogout {
+  display: none; /* will be switched to 'inline' */
 }
